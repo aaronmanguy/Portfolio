@@ -736,12 +736,12 @@
     width: 60%;
   }
 }
-@media (max-width: 402px) {
+@media (max-width: 403px) {
   .nav .ul .li .link {
     font-size: 75%;
   }
 }
-@media (max-width: 391px) {
+@media (max-width: 392px) {
   .skill_box {
     margin-top: 3%;
   }
