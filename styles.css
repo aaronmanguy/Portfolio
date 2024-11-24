@@ -736,7 +736,7 @@
     width: 60%;
   }
 }
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   .skill_box {
     margin-top: 3%;
   }
@@ -901,5 +901,13 @@
   }
   .nav .ul .li .link {
     font-size: 7px;
+  }
+}
+@media (max-width: 301px) {
+  .nav .title {
+    font-size: 8px;
+  }
+  .nav .ul .li .link {
+    font-size: 8px;
   }
 }
