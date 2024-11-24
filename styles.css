@@ -833,6 +833,8 @@
   }
   .nav .ul .li .link {
     font-size: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   .middle-boxes {
     width: 60%;
