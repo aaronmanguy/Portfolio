@@ -162,6 +162,7 @@
   text-shadow: 4px 4px 4px rgba(235, 172, 13, 1);
 }
 .resume-button {
+  transition: all 0.1s linear;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -206,6 +207,7 @@
   text-shadow: 4px 4px 4px rgba(235, 172, 13, 1);
 }
 .projects-button {
+  transition: all 0.1s linear;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -293,7 +295,6 @@
 
 .all-projects {
   display: grid;
-  margin: 0 auto;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 4%;
@@ -373,6 +374,7 @@
   font-size: 80%;
   font-weight: bold;
   background-color: rgb(76, 76, 255);
+  transition: all 0.1s linear;
   box-shadow: 0px 2px 5px 2px rgba(235, 172, 13, 1);
 }
 .project-button:hover {
@@ -508,6 +510,12 @@
   }
 }
 
+@media (max-width: 700px) {
+  .all-projects {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
   .skill_box {
     margin-top: 3%;
@@ -554,18 +562,55 @@
     width: 60%;
   }
   .resume-box {
-    width: 50%;
+    width: 45%;
     margin-right: 6%;
     margin-left: 9%;
-    padding: 55px;
+    padding: 50px;
   }
   .resume-button {
     width: 60%;
   }
   .projects-box {
-    width: 50%;
+    width: 45%;
     margin-left: 6%;
-    padding: 55px;
+    padding: 50px;
+  }
+  .projects-button {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .skill_box {
+    margin-top: 3%;
+  }
+  .about_box {
+    margin-top: 3%;
+  }
+  .tic-box {
+    margin-top: 3%;
+  }
+  .nav .title {
+    font-size: 18px;
+  }
+  .nav .ul .li .link {
+    font-size: 12px;
+  }
+  .middle-boxes {
+    width: 60%;
+  }
+  .resume-box {
+    width: 40%;
+    margin-right: 6%;
+    margin-left: 9%;
+    padding: 45px;
+  }
+  .resume-button {
+    width: 60%;
+  }
+  .projects-box {
+    width: 40%;
+    margin-left: 6%;
+    padding: 45px;
   }
   .projects-button {
     width: 60%;
@@ -840,5 +885,21 @@
   }
   .projects-button {
     width: 60%;
+  }
+}
+@media (max-width: 357px) {
+  .nav .title {
+    font-size: 13px;
+  }
+  .nav .ul .li .link {
+    font-size: 8px;
+  }
+}
+@media (max-width: 322px) {
+  .nav .title {
+    font-size: 12px;
+  }
+  .nav .ul .li .link {
+    font-size: 7px;
   }
 }
