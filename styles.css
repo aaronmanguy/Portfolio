@@ -713,7 +713,7 @@
     font-size: 18px;
   }
   .nav .ul .li .link {
-    font-size: 12px;
+    font-size: 80%;
   }
   .middle-boxes {
     width: 60%;
@@ -734,6 +734,11 @@
   }
   .projects-button {
     width: 60%;
+  }
+}
+@media (max-width: 402px) {
+  .nav .ul .li .link {
+    font-size: 75%;
   }
 }
 @media (max-width: 391px) {
