@@ -1,34 +1,32 @@
-@keyframes fade-down{
-  0%{
+@keyframes fade-down {
+  0% {
     opacity: 0;
-    transform: translateY(-30px) scale(0.9)
+    transform: translateY(-30px) scale(0.9);
   }
-  100%{
+  100% {
     opacity: 1;
-    transform: translateY(0px) scale(1)
+    transform: translateY(0px) scale(1);
   }
 }
 
-@keyframes fade-up{
-  0%{
+@keyframes fade-up {
+  0% {
     opacity: 0;
-    transform: translateY(30px) scale(0.9)
+    transform: translateY(30px) scale(0.9);
   }
-  100%{
+  100% {
     opacity: 1;
-    transform: translateY(0px) scale(1)
+    transform: translateY(0px) scale(1);
   }
 }
 
-@keyframes pulse{
-  0%{
-
+@keyframes pulse {
+  0% {
   }
-  50%{
+  50% {
     width: 41%;
   }
-  100%{
-
+  100% {
   }
 }
 
@@ -40,7 +38,11 @@
   width: 100%;
   height: 60px;
   /* background-color: rgb(29, 29, 29); */
-  background-image: linear-gradient(to right, rgba(235, 172, 13, 0.553), rgba(105, 105, 255, 0.543));
+  background-image: linear-gradient(
+    to right,
+    rgba(235, 172, 13, 0.553),
+    rgba(105, 105, 255, 0.543)
+  );
   animation: fade-down 0.5s;
 }
 
@@ -100,14 +102,25 @@
 
 .body {
   line-break: auto;
-  background-image: linear-gradient(to bottom right, rgba(235, 172, 13, 1), rgb(105, 105, 255));
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(235, 172, 13, 1),
+    rgb(105, 105, 255)
+  );
 }
 
 .head {
   padding: 40px;
+  width: 50%;
   background-color: transparent;
   text-align: center;
   animation: fade-down 0.5s;
+  display: flex;
+  justify-content: space-evenly;
+}
+.head-hold {
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -115,8 +128,20 @@
   font-size: 35pt;
   text-shadow: 4px 4px 4px black;
   animation: fade-down 0.9s;
+  margin-top: 50%;
 }
-
+.project-head {
+  padding: 40px;
+  background-color: transparent;
+  text-align: center;
+  animation: fade-down 0.5s;
+}
+.project-header {
+  color: white;
+  font-size: 35pt;
+  text-shadow: 4px 4px 4px black;
+  animation: fade-down 0.9s;
+}
 .sub {
   font-style: italic;
   margin-top: 20px;
@@ -142,6 +167,8 @@
   border-style: none;
   text-align: center;
   animation: fade-up 1s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .about {
@@ -173,6 +200,8 @@
   height: fit-content;
   z-index: 2;
   animation: fade-up 1s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .resume-box {
@@ -285,6 +314,8 @@
   border-style: none;
   text-align: center;
   animation: fade-up 1s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .skills {
@@ -300,6 +331,42 @@
 
 .skill_sub {
   color: black;
+}
+.contact-box{
+  width: 70%;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  box-shadow: 3px 3px 15px;
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom right, white, rgb(189, 189, 189));
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  border-style: none;
+  text-align: center;
+  animation: fade-up 1s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+.contact{
+  text-align: center;
+  font-size: 20pt;
+  font-weight: bold;
+  color: black;
+  border-radius: 15px;
+  margin-top: 40px;
+  text-shadow: 4px 4px 4px rgba(235, 172, 13, 1);
+}
+.contact_sub{
+  text-align: center;
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 15pt;
+  margin-bottom: 15px;
 }
 
 .link {
@@ -331,7 +398,7 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5%;
+  margin-top: 3%;
   width: 90%;
   height: 2px;
   background-color: rgb(76, 76, 255);
@@ -343,18 +410,25 @@
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 4%;
-  margin: 5%;
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
   animation: fade-up 0.5s;
 }
 .project-box {
+  position: relative;
   padding: 50px;
+  padding-bottom: 70px;
   box-shadow: 3px 3px 15px;
   border-radius: 15px;
-  background-image: linear-gradient(to bottom right, white, rgb(189, 189, 189));;
-  display: flex;
-  flex-direction: column;
+  background-image: linear-gradient(to bottom right, white, rgb(189, 189, 189));
+  align-items: center;
   border-style: none;
   text-align: center;
+  animation: fade-up 0.5s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .project-name {
@@ -377,11 +451,12 @@
   margin-bottom: 5%;
 }
 .project-button {
-  align-self: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-top: 5%;
   margin-bottom: 5%;
+  position: absolute;
+  right: 30%;
+  bottom: 0;
   padding: 20px;
   width: 40%;
   border-radius: 10px;
@@ -419,6 +494,12 @@
   object-fit: cover;
   background-color: grey;
 }
+.port-pic {
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  animation: fade-down 1.5s;
+}
 
 @media (max-width: 1280px) {
   .skill_box {
@@ -455,6 +536,10 @@
   }
   .nav .ul .li .link {
     font-size: 20px;
+    padding: 18px 14px
+  }
+  .head{
+    width: 60%;
   }
   .resume-box {
     width: 33%;
@@ -513,6 +598,10 @@
   }
   .nav .ul .li .link {
     font-size: 18px;
+    padding: 18px 14px
+  }
+  .head{
+    width: 60%;
   }
   .resume-box {
     width: 30%;
@@ -553,6 +642,10 @@
   }
   .nav .ul .li .link {
     font-size: 18px;
+    padding: 18px 14px
+  }
+  .head{
+    width: 60%;
   }
   .resume-box {
     width: 30%;
@@ -577,7 +670,8 @@
     font-size: 18px;
   }
   .nav .ul .li .link {
-    font-size: 12px;
+    font-size: 14px;
+    padding: 22px 14px
   }
   .middle-boxes {
     width: 60%;
@@ -654,7 +748,7 @@
     font-size: 18px;
   }
   .nav .ul .li .link {
-    font-size: 12px;
+    font-size: 14px;
   }
   .middle-boxes {
     width: 60%;
@@ -676,6 +770,18 @@
   .projects-button {
     width: 60%;
   }
+  .port-pic {
+    width: 130px;
+  }
+  .header {
+    margin-top: 0;
+  }
+  .head {
+    display: block;
+  }
+  .all-projects {
+    margin-bottom: 20%;
+  }
 }
 @media (max-width: 414px) {
   .skill_box {
@@ -694,7 +800,11 @@
     font-size: 18px;
   }
   .nav .ul .li .link {
-    font-size: 12px;
+    font-size: 14px;
+    padding: 18px 14px
+  }
+  .head{
+    width: 60%;
   }
   .middle-boxes {
     width: 60%;
@@ -734,7 +844,7 @@
     font-size: 18px;
   }
   .nav .ul .li .link {
-    font-size: 80%;
+    font-size: 14px;
   }
   .middle-boxes {
     width: 60%;
@@ -773,10 +883,10 @@
     margin-top: 3%;
   }
   .nav .title {
-    font-size: 14px;
+    font-size: 16px;
   }
   .nav .ul .li .link {
-    font-size: 12px;
+    font-size: 14px;
   }
   .middle-boxes {
     width: 60%;
@@ -810,10 +920,10 @@
     margin-top: 5%;
   }
   .nav .title {
-    font-size: 16px;
+    font-size: 18px;
   }
   .nav .ul .li .link {
-    font-size: 10px;
+    font-size: 14px;
   }
   .middle-boxes {
     width: 60%;
@@ -850,10 +960,10 @@
     font-size: 12pt;
   }
   .nav .title {
-    font-size: 16px;
+    font-size: 18px;
   }
   .nav .ul .li .link {
-    font-size: 10px;
+    font-size: 14px;
     padding-left: 12px;
     padding-right: 12px;
   }
@@ -895,7 +1005,11 @@
     font-size: 14px;
   }
   .nav .ul .li .link {
-    font-size: 10px;
+    font-size: 18px;
+    padding: 18px 14px
+  }
+  .head{
+    width: 60%;
   }
   .middle-boxes {
     width: 60%;
@@ -929,10 +1043,14 @@
     margin-top: 5%;
   }
   .nav .title {
-    font-size: 14px;
+    font-size: 18px;
   }
   .nav .ul .li .link {
-    font-size: 9px;
+    font-size: 12px;
+    padding: 18px 14px
+  }
+  .head{
+    width: 60%;
   }
   .middle-boxes {
     width: 60%;
@@ -955,14 +1073,7 @@
     width: 60%;
   }
 }
-@media (max-width: 357px) {
-  .nav .title {
-    font-size: 13px;
-  }
-  .nav .ul .li .link {
-    font-size: 8px;
-  }
-}
+
 @media (max-width: 322px) {
   .nav .title {
     font-size: 12px;
@@ -1004,17 +1115,4 @@
   .resume-box {
     width: 45%;
   }
-}
-.flash {
-  opacity: 0;
-  text-shadow: 0 0 10px transparent, 0 0 20px transparent, 0 0 30px transparent;
-  animation: flashAnimation 1.5s forwards;
-}
-.top {
-  position: relative;
-  top: 10%;
-  left: 0%;
-}
-.f {
-  opacity: 0;
 }
