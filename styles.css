@@ -569,11 +569,10 @@
 } */
 
 @media (max-width: 1280px) {
- .ex-projects {
+  .ex-projects {
     row-gap: 1%;
     margin-bottom: 15%;
   }
-
 }
 @media (max-width: 1024px) {
   .projects {
@@ -588,7 +587,7 @@
   .projects-box {
     width: 85%;
   }
-  .skill_box{
+  .skill_box {
     width: 85%;
   }
   .contact-box {
@@ -706,13 +705,13 @@
 }
 
 @media (max-width: 540px) {
-  .header{
+  .header {
     font-size: 40pt;
   }
-  .sub{
+  .sub {
     font-size: 25pt;
   }
-  .tree-hold{
+  .tree-hold {
     padding-right: 0;
   }
   .skill_box {
@@ -722,13 +721,13 @@
     margin-top: 3%;
     width: 70vw;
   }
-  .all-projects{
+  .all-projects {
     row-gap: 3%;
     margin-bottom: 20%;
   }
-  .ex-projects{
+  .ex-projects {
     margin-bottom: 80%;
-    row-gap: .75%;
+    row-gap: 0.75%;
   }
   .resume-button {
     width: 60%;
@@ -739,28 +738,28 @@
   .projects-button {
     width: 60%;
   }
-  .contact-box{
-    width: 70vw
+  .contact-box {
+    width: 70vw;
   }
 }
 @media (max-width: 500px) {
-  .head{
+  .head {
     padding-left: 0;
   }
-  .header{
+  .header {
     font-size: 30pt;
   }
-  .sub{
-    font-size: 20pt
+  .sub {
+    font-size: 20pt;
   }
-  .tree-sub{
+  .tree-sub {
     margin-top: 75px;
   }
   .about_box {
     margin-top: 3%;
   }
-  .about_sub{
-    padding: 0
+  .about_sub {
+    padding: 0;
   }
   .resume-button {
     width: 60%;
@@ -769,19 +768,18 @@
   .projects-button {
     width: 60%;
   }
-  .projects-button:hover{
-    animation: none
+  .projects-button:hover {
+    animation: none;
   }
-  .ex-projects{
+  .ex-projects {
     margin-bottom: 90%;
   }
-  .project-box{
+  .project-box {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media (max-width: 430px) {
-
   .about_box {
     margin-top: 3%;
   }
@@ -829,12 +827,12 @@
   .resume-button {
     width: 60%;
   }
-  
+
   .projects-button {
     width: 60%;
   }
-  .project-button{
-    font-size: 14pt
+  .project-button {
+    font-size: 14pt;
   }
 }
 @media (max-width: 412px) {
@@ -852,7 +850,7 @@
   .resume-button {
     width: 60%;
   }
-  
+
   .projects-button {
     width: 60%;
   }
@@ -867,10 +865,10 @@
   .resume-button {
     width: 60%;
   }
-  .ex-projects{
+  .ex-projects {
     margin-bottom: 100%;
   }
- 
+
   .projects-button {
     width: 60%;
   }
@@ -880,7 +878,7 @@
     width: 65vw;
     margin-top: 5%;
   }
-  .contact-box{
+  .contact-box {
     width: 65vw;
   }
   .about_box {
@@ -896,11 +894,11 @@
   .projects-button {
     width: 60%;
   }
-  .projects-box{
+  .projects-box {
     padding-left: 40px;
     padding-right: 40px;
   }
-  .project-box{
+  .project-box {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -924,7 +922,7 @@
   .projects-button {
     width: 60%;
   }
-  .ex-projects{
+  .ex-projects {
     margin-bottom: 115%;
   }
 }
