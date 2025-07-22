@@ -1,148 +1,294 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <nav class="nav">
-      <ul class="ul">
-        <li class="li">
-          <a
-            class="link"
-            href="https://docs.google.com/document/d/1inOQTdvZg4vEdvwPVGuno5Jfnyz2-DbtT9zkB9YCiWQ/edit"
-            target="_blank"
-            >Resume</a
-          >
-        </li>
-        <li class="li">
-          <a class="link" href="projects.html">Projects</a>
-        </li>
-        <li class="li">
-          <a class="link" href="#">Contact</a>
-          <ul class="ul">
-            <li class="li">
-              <a
-                class="link"
-                href="https://www.linkedin.com/in/aaron-tapley-117b59323/"
-                target="_blank"
-                >Linkedin</a
-              >
-            </li>
-            <li class="li">
-              <a
-                class="link"
-                href="https://github.com/aaronmanguy"
-                target="_blank"
-                >Github</a
-              >
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-
     <title>Portfolio</title>
-    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="images/leaf.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script defer src="main.js"></script>
+
     <body class="body">
       <div class="head-hold">
         <div class="head">
-          <img class="port-pic" src="images/port-pic3.jpg">
+          <!-- <img class="port-pic" src="images/port-pic3.jpg" /> -->
           <div class="header-sub">
             <h1 class="header">Aaron Tapley</h1>
-            <p class="sub">Software Developer</p>
+            <p class="sub">Software Developer - Video Game Developer</p>
           </div>
         </div>
+        <div class="tree-hold">
+          <div class="tree-sub">
+            <img src="images/tree-51-512.png" class="tree" />
+            <img src="images/leaf.png" class="leaf fall-up" />
+            <img src="images/leaf.png" class="leaf fall-down" />
+          </div>
+        </div>
+        <!-- <div class="head">
+          <div class="header-sub">
+            <h1 class="header">Aaron Tapley</h1>
+            <p class="sub">Software Engineer - Video Game Developer</p>
+          </div>
+        </div> -->
       </div>
       <div class="main-hold">
-      <div class="about_box">
-        <p class="about">About Me</p>
-        <hr class="divider" />
-        <p class="about_sub">
+        <div class="about_box">
+          <p class="about">About Me</p>
+          <hr class="divider" />
+          <p class="about_sub">
+            <br />
+            My name is Aaron Tapley. I am a graduate of Alcorn Central High
+            School, Base Camp Coding Academy and soon, Northwest Mississippi Community College. I enjoy being creative and
+            solving problems, which is what led me to start my software
+            development journey. In my spare time I like listening to music,
+            playing video games, watching anime, or making whatever crosses my mind.
+          </p>
           <br />
-          My name is Aaron Tapley. I am a graduate of Alcorn Central High School
-          and am currently attending Base Camp Coding Academy. I enjoy being
-          creative and solving problems, which is what led me to start my
-          software development journey at this Academy. In my spare time I enjoy
-          listening to music, playing video games, or making whatever crosses my
-          mind.
-        </p>
-      </div>
-      <div class="middle-boxes">
-        <div class="resume-box">
-          <p class="resume">My Resume</p>
           <a
             href="https://docs.google.com/document/d/1inOQTdvZg4vEdvwPVGuno5Jfnyz2-DbtT9zkB9YCiWQ/edit?usp=sharing"
             target="_blank"
-            ><button class="resume-button">Click Me!</button></a
+            ><button class="resume-button">Resume</button></a
           >
         </div>
+
         <div class="projects-box">
           <p class="projects">My Projects</p>
-          <a href="projects.html"
-            ><button class="projects-button">Click Me!</button></a
-          >
-        </div>
-      </div>
 
-      <div class="skill_box">
-        <p class="skills">Skills</p>
-        <hr class="divider" />
-        <br />
-        <div class="icon">
-          <div class="python">
-            <img class="img" src="images/python1.png" />
-            <p>Python</p>
+          <div class="all-projects" id="front-projects">
+            <div class="project-box">
+              <img class="project-img" src="images/Egg Sorceress - Cover.png" />
+              <hr class="divider" />
+              <p class="project-name">Egg Sorceress</p>
+              <p class="project-sub">
+                This was my first project using godot with the Game Club. I
+                implemented ranged combat, enemies that follow you, and a
+                quest/dialogue system.
+              </p>
+              <a href="https://uglypuppy87.itch.io/egg-sorcress" target="_blank"
+                ><button class="project-button">Play</button></a
+              >
+            </div>
+
+            <div class="project-box">
+              <img class="project-img" src="images/Nerd Corner-logo.png" />
+              <hr class="divider" />
+              <p class="project-name">Nerd Corner</p>
+              <p class="project-sub">
+                A store full of Anime / Game merchandise that utilizes the
+                Stripe payment system. You are able to browse the store without
+                logging in, however if you want to sell your own items you will
+                have to make your own account.
+              </p>
+              <a
+                href="https://nerd-corner-6485a0050f4d.herokuapp.com/"
+                target="_blank"
+                ><button class="project-button">Visit Site</button></a
+              >
+            </div>
           </div>
-          <div class="sql">
-            <img class="img" src="images/sql.png" />
-            <p>SQL</p>
+
+          <div class="ex-projects" id="all-projects">
+            <div class="project-box">
+              <img class="project-img" src="images/tic-screenshot.png" />
+              <hr class="divider" />
+              <p class="project-name">Python Tic-Tac-Toe</p>
+              <p class="project-sub">
+                Classic Tic-Tac-Toe recreated within Python.
+              </p>
+              <a
+                href="https://github.com/jacoba2024through2025/TictactoeProject"
+                target="_blank"
+                ><button class="project-button">View Code</button></a
+              >
+            </div>
+
+            <div class="project-box">
+              <img class="project-img" src="images/planner-logo.png" />
+              <hr class="divider" />
+              <p class="project-name prospect-name">
+                Prospect Schedule Planner
+              </p>
+              <p class="project-sub">
+                A schedule planner built using Javascript & React.
+              </p>
+              <a href="https://github.com/tjbcca/ReactPlanner" target="_blank"
+                ><button class="project-button">View Code</button></a
+              >
+            </div>
+
+            <div class="project-box">
+              <img class="project-img" src="images/Egg Sorceress - Cover.png" />
+              <hr class="divider" />
+              <p class="project-name">Egg Sorceress</p>
+              <p class="project-sub">
+                This was my first project using godot with the Game Club. I
+                implemented ranged combat, enemies that follow you, and a
+                quest/dialogue system.
+              </p>
+              <a href="https://uglypuppy87.itch.io/egg-sorcress" target="_blank"
+                ><button class="project-button">Play</button></a
+              >
+            </div>
+
+            <div class="project-box">
+              <img class="project-img" src="images/basecamp_logo.webp" />
+              <hr class="divider" />
+              <p class="project-name">BCCA Radio</p>
+              <p class="project-sub">
+                A music sharing website built using Django. Students data is
+                stored in models that is displayed depending on which student's
+                name is clicked.
+              </p>
+              <a
+                href="https://github.com/aaronmanguy/django-unit-project--BCCA-Radio"
+                target="_blank"
+                ><button class="project-button">View Code</button></a
+              >
+            </div>
+
+            <div class="project-box">
+              <img class="project-img" src="images/Nerd Corner-logo.png" />
+              <hr class="divider" />
+              <p class="project-name">Nerd Corner</p>
+              <p class="project-sub">
+                A store full of Anime / Game merchandise that utilizes the
+                Stripe payment system. You are able to browse the store without
+                logging in, however if you want to sell your own items you will
+                have to make your own account.
+              </p>
+              <a
+                href="https://nerd-corner-6485a0050f4d.herokuapp.com/"
+                target="_blank"
+                ><button class="project-button">Visit Site</button></a
+              >
+            </div>
+
+            <div class="project-box">
+              <img class="project-img" src="images\UPGrade-logo.png" />
+              <hr class="divider" />
+              <p class="project-name">UPGrade</p>
+              <p class="project-sub">
+                My Java unit project where we created a grade book using Java.
+              </p>
+              <a href="https://github.com/tjbcca/GradebookUP" target="_blank"
+                ><button class="project-button">View Code</button></a
+              >
+            </div>
+
+            <div class="project-box">
+              <img class="project-img" src="images/Party Starter-logo.png" />
+              <hr class="divider" />
+              <p class="project-name">Party Starter</p>
+              <p class="project-sub">
+                A Java Spring Boot project where my group created an event
+                planner api using Java and Spring Boot.
+              </p>
+              <a
+                href="https://github.com/aaronmanguy/spring-unitproject"
+                target="_blank"
+                ><button class="project-button">View Code</button></a
+              >
+            </div>
+
+            <div class="project-box">
+              <img
+                class="project-img"
+                style="background-color: transparent;"
+                src="images/skeen logo transparent.png"
+              />
+              <hr class="divider" />
+              <p class="project-name">Skeen Engineering</p>
+              <p class="project-sub">
+                This was my final project at Base Camp where I used the skills I learned during my time at Base Camp as the lead
+                front end developer.
+              </p>
+              <a href="https://www.skeenengineeringmap.com" target="_blank"
+                ><button class="project-button">Visit Site</button></a
+              >
+            </div>
           </div>
-          <div class="git">
-            <img class="img" src="images/git.perfect.png" />
-            <p>Git</p>
+
+          <button
+            class="projects-button"
+            id="projects-button"
+            onclick="projectsButton()"
+          >
+            See More
+          </button>
+        </div>
+
+        <div class="skill_box">
+          <p class="skills">Skills</p>
+          <hr class="divider" />
+          <br />
+          <div class="icon">
+            <div class="img1 img-scroll">
+              <img class="img" src="images/python1.png" />
+              <p>Python</p>
+            </div>
+            <div class="img2 img-scroll">
+              <img class="img" src="images/sql.png" />
+              <p>SQL</p>
+            </div>
+            <div class="img3 img-scroll">
+              <img class="img" src="images/git.perfect.png" />
+              <p>Git</p>
+            </div>
+            <div class="img4 img-scroll">
+              <img class="img" src="images/html-5-logotype.png" />
+              <p>HTML</p>
+            </div>
+            <div class="img5 img-scroll">
+              <img class="img" src="images/css-3.png" />
+              <p>CSS</p>
+            </div>
+            <div class="img6 img-scroll">
+              <img class="img" src="images/java-script.png" />
+              <p>JavaScript</p>
+            </div>
+            <div class="img7 img-scroll">
+              <img class="img" src="images/django.png" />
+              <p>Django</p>
+            </div>
+            <div class="img8 img-scroll">
+              <img class="img" src="images/java.png" />
+              <p>Java</p>
+            </div>
+            <div class="img9 img-scroll">
+              <img class="img" src="images/spring-logo-b.png" />
+              <p>Spring</p>
+            </div>
+            <div class="img10 img-scroll">
+              <img class="img" src="images/godot-icon.png" />
+              <p>Godot</p>
+            </div>
+            <!-- VV pls don't judge. i'm dumb VV -->
+            <div class="img10">
+              <img class="img hidden" src="images/godot-icon.png" />
+            </div>
           </div>
-          <div class="html">
-            <img class="img" src="images/html-5-logotype.png" />
-            <p>HTML</p>
-          </div>
-          <div class="css">
-            <img class="img" src="images/css-3.png" />
-            <p>CSS</p>
-          </div>
-          <div clsss="java-s">
-            <img class="img" src="images/java-script.png" />
-            <p>JavaScript</p>
-          </div>
-          <div class="django">
-            <img class="img" src="images/django.png" />
-            <p>Django</p>
-          </div>
-          <div class="java">
-            <img class="img" src="images/java.png" />
-            <p>Java</p>
-          </div>
-          <div class="spring">
-            <img class="img" src="images/spring-logo-b.png" />
-            <p>Spring</p>
-          </div>
-          <div class="c">
-            <img class="img" src="images/c.png" />
-            <p>C</p>
-          </div>
-          <div class="godot">
-            <img class="img" src="images/godot-icon.png" />
-            <p>Godot</p>
+        </div>
+        <div class="contact-box">
+          <p class="contact">Contact Me</p>
+          <hr class="divider" />
+          <p class="contact_sub">
+            <br />
+            (662) 643-1847 | artapley06@gmail.com
+          </p>
+          <div class="contact-icons">
+            <a href="mailto:artapley06@gmail.com"
+              ><img class="img email-icon" src="images/email-icon.svg"
+            /></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/aaron-tapley-117b59323/"
+              ><img class="img linkedin-icon" src="images/linkedin-icon.svg"
+            /></a>
+            <a target="_blank" href="https://github.com/aaronmanguy"
+              ><img class="img github-icon" src="images/github-icon.svg"
+            /></a>
           </div>
         </div>
       </div>
-      <div class="contact-box">
-        <p class="contact">Contact Me</p>
-        <hr class="divider" />
-        <p class="contact_sub">
-          <br />
-          (662) 643-1847  |  artapley06@gmail.com
-        </p>
-      </div>
-    </div>
     </body>
   </head>
 </html>
