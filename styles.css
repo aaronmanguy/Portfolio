@@ -466,6 +466,7 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 4%;
   margin: 5%;
+  margin-bottom: 10%;
   animation: fade-up 0.5s;
 }
 .project-box {
