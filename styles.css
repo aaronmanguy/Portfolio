@@ -464,7 +464,6 @@
   display: none;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  height: fit-content;
   gap: 4%;
   margin: 5%;
   animation: fade-up 0.5s;
@@ -700,6 +699,9 @@
   .all-projects {
     grid-template-columns: 1fr;
   }
+  .ex-projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 540px) {
@@ -770,7 +772,6 @@
     animation: none
   }
   .ex-projects{
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     margin-bottom: 90%;
   }
   .project-box{
@@ -830,6 +831,9 @@
   
   .projects-button {
     width: 60%;
+  }
+  .project-button{
+    font-size: 14pt
   }
 }
 @media (max-width: 412px) {
@@ -918,6 +922,9 @@
 
   .projects-button {
     width: 60%;
+  }
+  .ex-projects{
+    margin-bottom: 115%;
   }
 }
 @media (max-width: 358px) {
