@@ -247,6 +247,12 @@
   font-size: 15pt;
   margin-bottom: 15px;
 }
+/* .button-pulse:hover {
+  transition: all 0.1s linear;
+  cursor: pointer;
+  animation: pulse 1s;
+  animation-iteration-count: infinite;
+} */
 .resume-button {
   transition: all 0.1s linear;
   justify-content: center;
